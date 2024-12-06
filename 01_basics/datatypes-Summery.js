@@ -55,3 +55,15 @@ console.log(typeof myFunction);
 
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3   
+
+
+
+// **********************************xxx***************************************************
+
+// 2 types of memorys: stack (primitive) and heaf(non-primitive)
+
+
+
+
+// stack memory create sperate data copy in System  while
+// heaf memory dosent crate memory it directly made changes in original data
