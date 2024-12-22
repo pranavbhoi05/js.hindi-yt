@@ -19,7 +19,7 @@ console.log(myarray[2]);
 // myarray.unshift(7)    // add value from start of array
 // // myarray.shift()    //delete value from start of array 
 
-// console.log(myarray.includes(5));//we show its boolean ornot
+console.log(myarray.includes(5));//will show its boolean ornot
 // console.log(myarray.indexOf(3));
 
 // const newarray = myarray.join() //bind our array and convert into sting
