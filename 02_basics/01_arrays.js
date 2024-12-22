@@ -22,7 +22,24 @@ console.log(myarray[2]);
 // console.log(myarray.includes(5));//we show its boolean ornot
 // console.log(myarray.indexOf(3));
 
-const newarray = myarray.join()
+// const newarray = myarray.join() //bind our array and convert into sting
 
-console.log(myarray);
-console.log(typeof newarray);
+// console.log(myarray);
+// console.log(newarray);
+// console.log(typeof newarray);
+
+
+//slice , splice
+// The splice() method adds new items to an array. The slice() method slices out a piece of an array.
+
+// console.log("a", myarray);
+
+// const myn1 = myarray.slice(1,3)
+// console.log("b" , myarray);
+
+// const myn2 = myarray.splice(1,3)
+// console.log("c", myarray);
+// // console.log(myn1);
+// console.log(myn2);
+
+
