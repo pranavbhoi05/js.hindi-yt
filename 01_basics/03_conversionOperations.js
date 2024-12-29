@@ -72,6 +72,10 @@ console.log(y);
 
 // If used prefix, with operator before operand (for example, ++x), the increment operator increments and returns the value after incrementing.
 
+//another example
+let a = 0.2
+// let b = 0.3
+// console.log(++a + a++ + ++b + b++); //1.2+1.2+1.3+1.3
 
 
 
