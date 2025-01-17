@@ -31,12 +31,14 @@ console.log(myarray.includes(5));//will show its boolean ornot
 
 //slice , splice
 // The splice() method adds new items to an array. The slice() method slices out a piece of an array.
-
+// slice method remove element of array from last index and slice method does not affect original array
 // console.log("a", myarray);
 
 // const myn1 = myarray.slice(1,3)
 // console.log("b" , myarray);
 
+//whenever we perform splice operation it affects entire array
+//e.g consollog to c
 // const myn2 = myarray.splice(1,3)
 // console.log("c", myarray);
 // // console.log(myn1);
