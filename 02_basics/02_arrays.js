@@ -41,7 +41,7 @@ console.log(real_another_array);
 
 
 console.log(Array.isArray("Hitesh"))
-console.log(Array.from("Hitesh"))
+console.log(Array.from("Hitesh")) //The Array.from() static method creates a new, shallow-copied Array instance from an iterable or array-like object.
 console.log(Array.from({name: "hitesh"})) // interesting
 
 let score1 = 100
