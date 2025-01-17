@@ -38,7 +38,7 @@ console.log(myarray.includes(5));//will show its boolean ornot
 // console.log("b" , myarray);
 
 //whenever we perform splice operation it affects entire array
-//e.g consollog to c
+//e.g consollog to c , in opt it will give (0,4,5)
 // const myn2 = myarray.splice(1,3)
 // console.log("c", myarray);
 // // console.log(myn1);
