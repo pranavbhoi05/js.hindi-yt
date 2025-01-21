@@ -45,7 +45,7 @@ jsuser.greeting2 = function(){
     
 }
 
-console.log(jsuser.greeting); 
+console.log(jsuser.greeting2()); 
 //just because i freeze the item above, function didint work
 
 // console.log(jsuser.greeting2());
