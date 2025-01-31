@@ -1,4 +1,4 @@
-
+//Immediately Invoked Function Expression
 // ********************************************8
 // IIFE 
 //syntax : use () from start of function
@@ -8,6 +8,7 @@
 // to prevent pollution from global scope to normal funcion
 
 (function tea(){
+    //named iife
 console.log(`DB CONNECED`);
 
 })
@@ -21,6 +22,8 @@ console.log(`DB CONNECED`);
 //in arrowfunction stle
 
 ((name) => {
+    // unnamed iife
+    // also parameter passed iife 
     console.log(`DB CONNECTED2 ${name}`);
     
 }) (`pranav`);
