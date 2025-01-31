@@ -41,4 +41,15 @@ console.log(`DB CONNECED`);
     
 })("pran")
 
+************************************************************************
+    // another example after giving parameters (addition of two number)
+    
+    ( (val1,val2) => {
+    const val3 = val1 + val2
+    console.log(`val is ${val3}`);
+    
+    return
+})
+(5,5)
+
 //semicolan is must*****************************************
