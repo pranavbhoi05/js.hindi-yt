@@ -1,0 +1,48 @@
+
+<!-- how to creat nodelist programatically -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaiaur code</title>
+</head>
+<body style="background-color: gray;color: white;" >
+</body>
+    <script> //to create div element we are doing this operation -->
+        const div = document.createElement("h1")
+        console.log(div);
+
+        //to create class
+        div.className = "main"
+
+        //same we can create  id
+        //just for fun we did just some operation
+        div.id = Math.round(Math.random() * 10 + 1)
+
+        //to set attribute
+        //most of the developer perfer to use setattribute , its issential
+        //this methos directly overwriteon value
+        div.setAttribute("title","generate title")
+
+         //to add styling
+         div.style.backgroundColor = "green"
+         div.style.padding = "15px"
+
+         //till this moment we have made all changes but why isnt is displaying on page ??
+         //we have create div, which is in memory but not page
+         //to get it on page we will say to document to attach child first
+
+          
+         div.innerText = "chai aur code"
+         
+        //this both methos can work 
+
+         const addtext = document.createTextNode("pranav")
+            div.appendChild(addtext)
+
+            document.body.appendChild(div)
+
+    </script>    
+
+</html>

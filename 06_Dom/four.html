@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai</title>
+</head>
+<body style="background-color: rgb(186, 106, 106);color: white;">
+    
+</body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>   
+    function addlanguage(langame) {
+        //create 
+        //add value inner html
+        //select (where to attach, use queryselector)
+        //append
+
+
+        const li = document.createElement("li")
+        li.innerHTML = `${langame}`
+       document.querySelector("ul").appendChild(li)
+
+    }  
+    addlanguage("python")
+
+// **********************optimise**********************************
+    function addoptilang(langname) {
+        const li = document.createElement("li")
+        const crnode = document.createTextNode(`${langname}`)
+        document.querySelector("ul").appendChild(crnode)
+
+    }
+
+    addlanguage("css")
+    addlanguage("ruby")
+
+
+    // ********************* edit***************************************8 
+
+    // select values first (querySelector)
+    // create element li
+    // add content in textcontent (in variable)
+    // variable.replacewith(variable)
+
+    const secondlang = document.querySelector("li:nth-child(2)")
+    console.log(secondlang); //i did console log to check few things
+    // seclang.innerHTML = "mojo"
+
+    const newli = document.createElement("li")
+    newli.textContent = "zzz"
+    secondlang.replaceWith(newli)
+
+    // 2nd method to replace
+
+    const god = document.querySelector("li:first-child")
+    console.log(god);  // i did console log to check few things
+   const variale = document.createElement("li")
+   variale.textContent = "hello"
+   god.replaceWith(variale)
+
+   //3rd method
+    const hhh = document.querySelector("li:nth-child(3)")
+    hhh.outerHTML = "<li>typescript</li>"
+    
+
+    // **************************delete*******************************888
+    const jjj = document.querySelector("li:last-child")
+    jjj.remove()
+
+
+    </script>
+</html>
