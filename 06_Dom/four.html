@@ -28,6 +28,14 @@
     addlanguage("python")
 
 // **********************optimise**********************************
+
+// we dont usually use innerhtml cause there might be thousands are lacks of value 
+// we wanted to add,and it cause lot tree traversing in code which isnt good thing
+// whats tree traversing:
+// Tree traversal in JavaScript isn't inherently bad, but there are certain
+// challenges related to recursion depth, memory consumption, synchronous execution
+// so i perefer to use it in optimise
+        
     function addoptilang(langname) {
         const li = document.createElement("li")
         const crnode = document.createTextNode(`${langname}`)
