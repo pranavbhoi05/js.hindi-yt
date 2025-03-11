@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: gray; color: coral;">
+    <h2>amazing images</h>
+      <div>  
+        <ul id="photos">
+            <li><img width="200" id  ="scifi"  src="https://images.pexels.com/photos/7662609/pexels-photo-7662609.jpeg?auto=compress&cs=tinysrgb&w=600" alt="photoshop">  </li>
+            <li><img width="200" id="leaf"  src=https://images.pexels.com/photos/3150553/pexels-photo-3150553.jpeg?auto=compress&cs=tinysrgb&w=600 alt=>"</li>
+            <li><img width="200" id="bridge"  src=https://images.pexels.com/photos/2341830/pexels-photo-2341830.jpeg?auto=compress&cs=tinysrgb&w=600 alt=""></li>
+            <li><img width="200" id="sakura"  src=https://images.pexels.com/photos/4058530/pexels-photo-4058530.jpeg?auto=compress&cs=tinysrgb&w=600 alt=""> </li>
+            <li><img width="200" id="plane"  src=https://images.pexels.com/photos/3863778/pexels-photo-3863778.jpeg?auto=compress&cs=tinysrgb&w=600 alt=""></li>
+            <li><a style="color: aliceblue;" href= "https://google.com" id="google">google</a></li>
+        </ul>
+    </div> 
+</body>
+
+
+<!-- study:: and more content is indesktop file interview -->
+<!-- currenttarget
+clientx
+clienty
+screenx
+screeny
+altkey
+ctrlkey
+shiftkey
+keycode -->
+
+
+<!--    * all java script event goes sequentially -->
+<script>
+    document.getElementById("photos").addEventListener("click",function(e){
+        // alert("hello")
+        console.log("clicked inside the ul");    
+    },false)
+    document.getElementById("plane").addEventListener("click",function(e){
+        console.log("clicked plane");
+        // e.stopPropagation()
+    },false)
+
+    document.querySelector("#google").addEventListener("click",function(e) {
+    //     e.preventDefault()   //it prevents its default state, now google wont open
+    //     e.stopPropagation()    //now bubbling is also stopped
+        console.log("google.com");
+        
+    })   
+// ****************************************************
+// document.querySelector("#photos").addEventListener
+// ("click",function(e)
+//  {
+    // console.log(e.target.parentNode); 
+    //  if(e.target.tagName === "IMG"){   //by using tagname i could easy select img from ul
+    //     let removeit = e.target.parentNode
+    //     removeit.remove()  
+    //  }
+
+     //somtimes we wanted to select its parents so we take parentnode
+    // let removeit = e.target.parentNode
+    // removeit.remove()                       
+    // //this methos cause little problem whenever i click on google, it delete all images , to prevent we use if ()
+                                            
+
+// },false)
+
+</script>
+</html>
