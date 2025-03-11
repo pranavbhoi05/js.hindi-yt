@@ -1,0 +1,86 @@
+*INTERVIEWER MAY ASK PROMISES IN JS :
+
+1.In JavaScript, a Promise is like a placeholder for a value that will be available later,
+2.usually after an asynchronous operation (like fetching data or waiting for a timer). 
+3.It helps you handle tasks that take time without blocking your code
+
+How it works:################################################################3
+Pending: The Promise starts in this state—waiting for the result.
+
+Fulfilled: The task completes successfully, and the Promise returns a value.
+
+Rejected: The task fails, and the Promise returns an error.
+
+
+################################################3
+there are 4 Key Points:
+resolve: Used when the task succeeds.
+
+reject: Used when the task fails.
+
+.then(): Handles the successful result.
+
+.catch(): Handles errors.
+
+Promises make async code cleaner and easier to manage!
+
+##################################( FETCH METHOD ) #############################################
+definition : fetch is a modern JavaScript function used to make HTTP requests 
+(like getting data from a server or sending data to a server). 
+It’s a simpler and more powerful alternative to older methods like XMLHttpRequest
+
+How fetch Works:
+1.You call fetch(url) to send a request to a server.
+2.It returns a Promise that resolves to the server's response.
+3.You can then process the response (e.g., convert it to JSON).
+
+*************************************************************************************8
+ code :
+	fetch('https://jsonplaceholder.typicode.com/posts/1') // Step 1: Send request
+	  .then(response => response.json()) // Step 2: Convert response to JSON
+  	  .then(data => console.log(data)) // Step 3: Use the data
+  	  .catch(error => console.error('Error:', error)); // Handle errors
+
+Explanation:
+fetch('https://jsonplaceholder.typicode.com/posts/1'):
+Sends a GET request to the URL.
+
+Returns a Promise that resolves to a Response object.
+.then(response => response.json()):
+
+The Response object has methods like .json() to parse the data.
+.json() also returns a Promise, so we chain another .then.
+
+.then(data => console.log(data)):
+The parsed data (e.g., JSON) is available here.
+
+.catch(error => console.error('Error:', error)):
+Handles any errors (e.g., network issues).
+
+################################  ALSO FETCH ############################################
+
+
+
+micro task queue  (high priority queue) : 		
+
+In short, the micro task queue ensures high-priority 
+tasks are handled quickly even before settimeout function and other tasks.
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+1. Sending the Request:
+*You call fetch(url, options) to send an HTTP request to a server.
+*It returns a Promise that resolves to a Response object.
+
+2. Processing the Response:
+*The Response object contains the server's reply.
+*You use methods like .json(), .text(), or .blob() to extract the data from the response.
+*These methods also return Promises, so you chain .then() or use await.
+
+
+
+$$$$$$$$$$$$$fetch works in two main parts: $$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Part 1: Send the request and get a Response.
+
+Part 2: Process the Response to extract and use the data.
+### This two-step process makes fetch simple and powerful for working with APIs!
