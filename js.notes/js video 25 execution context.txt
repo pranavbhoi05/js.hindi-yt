@@ -1,0 +1,35 @@
+java script execution context:
+*in browser (this) keywords value came up as window object
+
+*javascript runs in two phases
+
+1*globle execution context :  globle execution alocated in this keyword
+
+2*function execution context
+
+3*eval execution context
+
+**************************************************************************
+
+1.    memory creation phase 
+e.g:  whenever we declear variable and anything,it alocate in memory, they arnt execute in 
+      this phase cause it executes in execution phase (all variables are kept in memory phase)
+	*all the variables and all  + - opration are store in this phase
+
+2.     execution phase 
+ :     when execution phase create after use it automatically delete , once its work is done
+       (each operation waits for the last one to complete before execution)
+	it goes like thread
+	*Each time a function is executed, a new execution phase is automatically created.
+
+************************************************************************************
+		for interview perspective prepare how call stacks work:
+
+* how call stacks work: give em exemple of function by taking
+ 3 function(1)(2)(3) 
+
+
+to understand call stack go inspect and sourece
+go to snippets , create filename.js 
+write code for e.g:
+		

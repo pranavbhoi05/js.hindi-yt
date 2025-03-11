@@ -1,0 +1,66 @@
+code sandbox
+stackbliz
+
+mark down file
+*****************************************************************************
+
+how to rite css on color coding project
+
+how to get values from input******
+input type button
+forms
+label2
+parseint  : This code converts the string "123" into the integer 123. It's a straightforward example of how parseInt() interprets and converts string data.
+.value
++=
+append
+alert
+link
+a href
+.canvas
+.target
+eventlistener  : multiple events happens but there has to be someone who can listen
+that events
+multiple events happens in eventlister. e.g, mouse hovering and more
+whereever we use click event add function in it
+*************************************************************************
+
+project 1.
+
+first select elemenets
+select all button
+then select body
+we can do either by selcting id or loop  
+but by selecting all element we can loop it
+by using loop is too easy and time saving
+addeventlistener
+
+***************************************************************
+
+project 2.
+
+same goes to this one
+
+*(whereever we submit form,its value go into server , to avoid it we use submit in eventlistener and preventdefalut)
+* therer is another thing (sometimes people select value before evenntlistener )
+*always chose values of form inside of eventlistener 
+just by using (. value) in crated const we can access inputvalue 
+*we use parseint to convert string value into integer
+
+queryselctor hight . value= to add value in format of strings and intigers	
+
+
+*********************************************************************************8
+project 3
+
+*flexbox?
+
+first gernerate random num
+we take date method
+
+*setinterval() :  use on method that ask for how long u wanna set interval
+*there are two parameters in this method : (function(){} , 1000) 1000= 1 sec ,2000 = 2 sec
+************************************************************************
+project 4
+
+	

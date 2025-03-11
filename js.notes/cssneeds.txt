@@ -1,0 +1,11 @@
+file structure
+
+padding ,margin,bg color , text-color
+
+inline and block , class and id
+
+position , flexbox is good
+
+tailwind basics  
+
+border height width display

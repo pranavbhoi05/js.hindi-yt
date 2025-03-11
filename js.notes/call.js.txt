@@ -1,0 +1,14 @@
+#######  CALL  #####################3
+
+(.this)call passes current execution context to another function
+to hold reference (variable)inside of call stack we use call
+
+cause work from top element
+and incase if 2nd stack element wanted to use reference of 1st element of stack 
+and if its not present in stack, that would be problem cause, once first element 
+of stack execute then it remove its execution context and remove all the variables    
+
+
+############## BIND ########################
+
+ 

@@ -1,0 +1,44 @@
+classes and id's both work same but :
+id : can be used onetime
+class : can be used multiple time
+
+
+<pre> tag :
+ pre tag dont make any changes in element and keep it in its default state
+
+example :<pre>
+	line1
+        line2
+	line3 
+	<pre>
+
+opt:    line1
+        line2
+	line3
+#####################
+without pre tag :
+
+	<h2>
+	line1
+        line2
+	line3
+	<h2/>
+
+opt :  line1 line2 line3
+
+*****************************************************************
+
+<span> :
+	by using span we can perform inline operations on same raw
+	e.g : bacroundcolor and css styles
+*************************************************************************
+	SAME SAME BUT DIFFENRT, CAUSE SPAN PERFORM OPERATION ON GIVE TEXT (INLINE TEXT), 
+	BUT DIV TAKES ENTIRE width OF DOCUMENT THATS WHAT WE CALLED (BLOCKLEVEL ELEMENT)
+**********************************************************************
+<div> :
+	div is block level container it takes whole block (whole raw)
+
+	e.g  : _
+
+	div__________________________________________________________
+	

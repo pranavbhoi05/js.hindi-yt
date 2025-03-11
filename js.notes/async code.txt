@@ -1,0 +1,18 @@
+ 
+we get filesystem access in node js engine , cause browser doent have power to read file
+
+settimeout , setinterval  : is method which also calls api
+
+wheneer we declear settimeout and setinterval funciton it comeup with handler(function) and timeout
+
+settimeout    : settimeout takes time then perform operation once 
+setinterval   :  setinterval takes time then perform oprations continuously
+cleartimeout  : Stops a one-time delayed task created by setTimeout
+clearinterval : Stops a repeating task created by setInterval
+
+*****why Value flushout is essential :
+forMaintaining clean and efficient code.
+Preventing bugs and errors.
+Optimizing memory and performance.
+Ensuring security and privacy.
+Enabling reusability and dynamic updates.

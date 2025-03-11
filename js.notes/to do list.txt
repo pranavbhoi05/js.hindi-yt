@@ -1,0 +1,26 @@
+ask anand why we use class in js give me real life exmple
+i know working of class but i dont where to use and why
+
+proxy: 11.3.2025
+split :
+join:
+bind : 10/3/2025
+
+task : add new list element in list
+
+ask anand js vid 33 = start from 25min
+
+vid 34, 7.18min
+
+vid 39
+
+
+revice all loop
+
+dom
+
+ask anand :1. how to create color button project from scratch using css
+ 
+           2. html file = line no 23 in (project 2) = bmi calculator 
+
+events .txt

@@ -1,0 +1,18 @@
+byhelp of api we can communicate with diffrent language . e.g youtube
+
+*protocol
+*data 
+
+##########for practice use ##########
+
+1.https://randomuser.me/
+
+2.github api
+
+#####################################
+
+ajax 
+
+XMLHTTPREQUEST : BY USING THIS DATA CAN BE SEND AND RECEIVE
+
+			

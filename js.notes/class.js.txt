@@ -1,0 +1,15 @@
+**inside of the class dont need to use function keyword
+
+################  Why don't you need the function keyword?  ##################
+* 1. In ES6 (ECMAScript 2015), the class syntax was introduced to make JavaScript's object-oriented programming more intuitive and similar to other languages like Java or C++.
+* 2. Inside a class, methods are defined directly without the function keyword to keep the syntax clean and concise.
+* 3. The function keyword is only used for standalone functions or functions defined outside of a class.
+
+definition : classes are an es6 feature that provides a more structured and cleaner way 
+to work with objects compared to traditional constructor function that we're normally used to.
+
+another definition : Classes in JavaScript are blueprints for creating objects, encapsulating data (properties) and 
+		     behavior (methods) into a single unit, using the class keyword introduced in ES6.
+
+
+wil hwlpfull for future topics like:: static keyword,encapsulation and inheritance

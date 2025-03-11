@@ -1,0 +1,99 @@
+1.document.getElementById("id")  //id is method here and classname too
+to select id -(#)- document.querySelector("#content")
+        class-(.)- document.querySelector(".heading")
+
+
+2.make sure to use cap letters in operation 
+e.g: document.getElementById("tital").className
+    
+
+
+3.wherever we use set attribut value always oveerride
+
+4. const title = document.getElementById("title")
+   *title.style.backgroundColor = "green"
+	*title is variable here
+	*just by using dot we can do many css operation
+
+5. interesting:
+		there is diffrence in innerText and Textcontent 
+ 		*innertext : to see visual content on in line (h1 to h6)
+		*textcontent : to see hidden elements in line  (h1 to h6)
+		*innerhtml : gives values with html elemets
+
+6. HTML collection ?
+
+7. querryselector
+
+8. css selector?
+
+9. we call all the things in htmml .e.g html,title,meta
+
+10. try to create document object model
+
+11. anything we see in dom is not array ,
+ html collection, node collection and arrays are all diffrent thing
+but we can store this things in array to perform task
+
+e.g  
+but few things match with array, iwe had to take [0], cause it start from 0
+templist[0].style.color = "green"
+
+always use foreach on nodelist cause we dont have map()
+to access map we need to convert into array first
+
+
+12. to convert html collection list into array i use syntax:
+
+Array.from  = a must be capital and from mean from where i convert array
+
+13. what i did
+
+*first i create ul list and givethem all sam class (list-item)
+inspect : document.getElementsByClassName("list-item")
+
+*stored in variable
+const ttt = document.getElementsByClassName("list-item")
+
+*wasnt working properly cause it wasnt array,we tried to use foreach
+ttt.foreach((li) => console.log(li))
+
+*converted into array
+Array.from(ttt)
+
+nth child
+
+*used style element
+myarr.map((k) => k.style.color = "orange")
+
+*************************************************************
+14. parent.children.innerHTML
+
+new things i learned in video 33
+
+(inspect in browser) 
+
+*console.log(parent.children) (we get html collection)
+*console.log(parent.children[1].innerHTML (to access value in list)
+*we can access for loop even if we cant access any loop in elemet
+*parent.children[1].style.color = "coral"(while making style dont forget to use [] which start from 0)
+* firstelementchild : to select first element of list
+* lastelementchild  : to select last element of list
+* we can also go access from child to parent,but first we need to store child in variable
+    const dayone = document.querySelector(".day")
+    console.log(dayone );
+    console.log(dayone.parentElement);
+
+*console.log(dayone.parentElement); :  to track parent
+*console.log(dayone.nextElementSibling); : to get result of next sibling element
+*console.log("nodes: ", parent.childNodes); to get nodelist
+
+*********************************************************************
+15. video 33. new file name (how to create node list)	
+
+* to create div element : const div = document.createElement("div")
+* same wecan also create h1 const div = document.createElement("h1")
+*
+
+16. optimization?
+17. traversing

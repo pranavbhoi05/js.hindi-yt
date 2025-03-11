@@ -1,0 +1,14 @@
+.this is about to telling (current context)
+.this means current context
+
+if we take example of monday :
+
+every week monday comes like
+last monday
+current weeks monday
+and next weeks monday
+how  would i know which monday you are talking about
+thats how this keyword works
+
+
+conculssion :  how would i know if im talking about current context (like monday example)

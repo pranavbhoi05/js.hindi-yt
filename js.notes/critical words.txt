@@ -1,0 +1,8 @@
+*enumeratable
+*iteratable
+*Encapsulation : 
+Encapsulation is about bundling data and behavior into a single unit (e.g., a class or object).
+It involves hiding the internal state of an object and providing controlled access through methods.
+The goal is to protect data integrity, reduce complexity, and improve maintainability.
+Encapsulation is a fundamental concept in OOP and is essential for writing clean, secure, and reusable code.
+

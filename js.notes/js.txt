@@ -1,0 +1,82 @@
+
+js vid 25 need to watch
+
+
+js vid 26
+
+1.if else
+2.switc case
+3. terner oprator
+
+time : 12,16,22 , 25 ,27,30,46
+ && : and operator
+     in and oprator all condition must be true
+
+ || : or operator
+	even if single condition cames true the code will be execute
+
+******************************************************************
+js vid 27 loops (also called as iterations) 
+
+9.27 issue (anand)
+
+ctr + d forselecting multiple element change at same time
+
+whats truthy, and all (revice)
+
+***********************************************************************
+i dont get this topics:
+
+
+
+
+vid no 29 : high order arrayloop
+1.forof loop
+also : why did he say that use forof loop insted of for,while,do-while
+
+2. whats meaning of iteratable
+
+3.maps
+
+4. whats work of foreach loop
+
+5.breake statement in array
+
+***********************************************************8
+
+1.nested loops
+
+2. maps
+
+3.array function loop
+in callback function : there is no function name in callbackfn
+
+4. arrowfunction : ()<={}
+
+5. need to revice functions
+
+6. implicite arrow and explicite
+
+
+******************************************************************
+whats callback in js
+
+*************************************
+
+// map() is callback function  
+// i use map insted foreach cause its way to easy  
+
+const mynumbers = [1,2,3,4,5,6,7,8,9,10]
+
+// const newnums = mynumbers.filter( (map) => map * 5 )
+// automatically returns value
+
+// console.log(newnums);
+
+try sAME thing by using foreach
+
+***********************************************************
+
+dsa : seralization of tree and de seralization of trees
+
+shallow copy and deep copy

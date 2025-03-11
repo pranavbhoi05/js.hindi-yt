@@ -1,0 +1,27 @@
+shallow and deep copy
+whenever we perform copy operation in array it always create shall copy
+
+
+
+Shallow Copy Methods:
+A shallow copy creates a new object or array where only the first level of data is copied.
+If the original object or array contains nested objects or arrays,
+ the shallow copy will still reference those nested structures (i.e., they are not copied but shared)
+
+use in :
+Array methods like slice() or concat() for arrays.
+*******************************************************************
+Deep Copy Methods:
+
+ A deep copy creates a completely independent copy of the object or array,
+including all nested objects or arrays. Modifications to the copied object or array will not affect the original
+
+use in :
+JSON.parse(JSON.stringify()) (simple but doesn’t work with functions, undefined, or circular references).
+Libraries like lodash (_.cloneDeep) for more robust deep copying.
+
+***********************************************
+
+conclussion : 
+1.original array affects in shallow copy
+2.original array dont affect in deep copy

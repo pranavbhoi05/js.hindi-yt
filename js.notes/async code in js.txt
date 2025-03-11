@@ -1,0 +1,38 @@
+##################################async code is also known as general knowladge of js################################################
+
+
+*Asynchronous JavaScript allows a program to perform multiple tasks simultaneously.
+*It's useful for long-running tasks, like fetching data from a server or reading from a file
+
+*javascript is syncronous language,(Tasks are performed one at a time) js isnt builtin async,we have to create that environment by using api's and setinterval methods
+* api's are comming with js thats why java is asynce
+*its single threaded language,
+*each opration wait for the last one
+
+##################blocking code and non-blocking code:#####################################
+
+
+blocking code : 1.blocks the flow of entire code 
+                2. reads file syncronuslly
+		e.g (you can ask someone to wait for a moment; I'll go grab some water in the meantime.)
+
+non blocking code : 1.this does not block the entire code
+                    2. reads file asyncronuslly
+                e.g (you can tell someone to go ahead ,I’ll join you shortly)
+
+
+e.g:  lets take example , i got data from user and i want to store his data in database and afterword i need to give notification to user that your data is register with success
+	but what if i sent him message that your data has register, meanwhile i have'nt worked on his data yet,wouldnt it be wrong, thats it . there are few use cases
+	of in blocking and non blocking code.
+
+
+********behind the scene***************
+When you run an async task:
+1.The task starts in the call stack.
+2.Then async task is sent to Web APIs (browser features) to handle it in the background.
+3. Once the task is done, it moves to the task queue.
+4.When the call stack is empty, the task moves back to the call stack to finish.
+
+*This process ensures async tasks don’t block other code from running.
+##############################################################################################
+

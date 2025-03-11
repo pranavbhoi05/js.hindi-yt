@@ -1,0 +1,311 @@
+  
+
+hoesting with let (temporal red zone)
+hoesting hota he but just because of temporal red zone they dont show
+
+**************************8
+parseint?
+
+whats starvation in js (promises)
+
+**********************************
+diffrence between call and bind
+
+*********************************************************8
+deep and shallow copy
+
+*********************************
+slice and splice
+
+Slice: Copies a portion of the array without changing the original.**What it does: Extracts a portion of an array and returns it as a new array.
+
+Splice: Modifies the original array by adding/removing elements.** What it does: Adds or removes elements from an array in place.
+
+***************************************************
+Array.of
+Array.from
+Array.isArray
+sprade operator
+
+******************************************************
+onjects:
+1.singleton and object literals = wherever we declear object as literals singleton does not create, if we are creating object with constuctor then singleton will be created
+2.symbol = Symbol is A unique and immutable primitive value , Used as unique keys for object properties. and should always be written and declear in [] . e.g: console.log(myobj[mysym])
+
+
+destructuring : Destructuring in JavaScript is a way to unpack values from arrays or objects into variables quickly and easily.
+		*Makes code cleaner and shorter.
+ 		*Works for both arrays and objects.
+
+implicite : means i assume e.g we dont need to write return in arrow function if we are declearing statement in one line
+
+iffe : we use iffe to immidiatlly execute the function and it also prevent pollution from global scope to normal funcion
+
+this keyword
+
+&& : (and operator) in this oprator all condition must be true
+|| : in or operator even if single condition cames true the code will be execute
+?? : it checks safty value if its null or undefined and if its then it will take another value which was preserved 
+?  : in terniary operator we check true or false in statement 
+
+forof loop   : 1.Maps object holds key-value pairs  (specially use fr array) also (to make object iteratable there option (object.entries(variable) make this changes at variable place )
+	       2.there is no duplicate value in map
+	       3.(this loop doesnt apply on object cause they are not iteratable)
+
+forin loop   : 1.objects are iteratable in this loop (specially use fr object)
+	       2.maps are not iteratable in this loop
+  
+foreach loop : 1.its higher order function
+	       2. it Does not modify the original array (unlike map or filter)
+	       3.Easy to loop through arrays
+	       4.forEach:doesnt return the values from variable
+
+split :
+join:
+
+filter       : 1.return the value IN new array
+	       2.we specially use filter to (check condition) like true or false
+
+map()        : 1.can perform chaining in map 
+               2.way better than foreach cause also return value
+
+
+reduce loop  : 1.What it does: Reduces an array to a single value
+	       2.it provides (accumulator , currentvalue) and initialValue in function
+	       3.Use cases: Summing numbers, flattening arrays, grouping data, 
+
+tree traversing : Tree traversal in JavaScript isn't inherently bad, but there are certain challenges related to recursion depth, memory consumption, synchronous execution
+		  so i perefer to use it in optimise.
+
+my own:
+PJRNLGY
+RDLPDWG
+NRK42JP
+SELJ7WX
+******************************
+whats function :
+1st class classfunction ???
+******************************************************************************
+*****************************interview******************************************
+#whats eventlistenerin java?
+ :
+			1. events in javascript dosnt just provide clicks but also give ability of propogation 
+			2. there are 3 parameters in event listerner, like if we take an example of
+			 (click , double click , keyboard up, keboard down ),then function and 3rd one is false , which we consider as default value
+			3.event object?
+			4.EVENT PRPOGATION :  there are two context in event propogation which are capturing and bubbleing
+					 1. in todays market and projects we mostly use event bubbling,but in few senarios we can use eventcapturing too
+                                         2. You can control which phase an event should be handled in by specifying it in the eventlistener true for capturing, false for bubbling).
+                                          capturing:********
+                                          capturing go from top to bottom 
+			           while
+                                          bubbling:*********it depends upon usecase
+                                          for an example :
+                                          bubbling go from bottom to top
+                            ############:(SOMETIMES WE WANTED TO (STOP) PREVENT BUBBLING IN OUR CODE, SO IN THAT SENARIO WE USE METHOD WHICH WE CALL STOPPROPOGATION() )
+
+			5. type             :  The type read-only property of the Event interface returns,
+		            a string containing the event's type. It is set when the event is
+	        	    constructed and is the name commonly used to refer to the specific event,
+                            such as click, load, or error.
+
+                        6. timestamp        :  The timeStamp read-only property of the Event interface returns 
+               	                              the time (in milliseconds) at which the event was created.
+
+                        7. stopropogation   :  wherever we want to make inner element and outter element separate
+                                              in bubbling we use stoppropogation,after using this bubbling stops
+
+                        8. preventdefault   :  change its defalut behaviour,i tried this on google.com
+                                               (it prevents its default state, now google wont open)
+
+                        9. eventpropogation :
+
+                        10. target          :   shows that from which id (values are comming from) gives id,classes and source location
+
+                        11. tagname         :    The tagName read-only property of the Element interface returns 
+                                                 the tag name of the element on which it's called. e.g IMG
+
+                        12. toelement       :
+
+                        13.  srcelement     : not in use 
+
+                        14.  currenttarget  :
+
+                        15.     clientx     :
+
+                        16.     clienty     :
+
+                        17.     screenx     :
+
+                        18.     screeny     :
+
+                        19.     altkey      :
+ 
+                        20.     ctrlkey     :
+
+                        21.     shiftkey    :
+
+                        22.     keycode     :
+
+***********************capturing and bubbleing*********************************** 
+* there are two context in event propogation
+:1. in todays market and projects we mostly use event bubbling,but in few senarios we can use eventcapturing too
+ 2. You can control which phase an event should be handled in by specifying it in the eventlistener true for capturing, false for bubbling).
+
+capturing:********
+capturing go from top to bottom 
+
+bubbling:*********
+for an example :
+bubbling go from bottom to top 
+
+:e.g iNNER ELEMENT(IMG) tHEN < li  AFTER THAT < ul
+whenerver we declear addeventlisterner there are 2 intites must be given which are
+method, function and there is another intite which is in default which 
+we called in true and false, basically it consider false as default value  
+
+
+##################################async code is also known as general knowladge of js################################################
+
+
+*Asynchronous JavaScript allows a program to perform multiple tasks simultaneously.
+*It's useful for long-running tasks, like fetching data from a server or reading from a file
+
+*javascript is syncronous language,(Tasks are performed one at a time) js isnt builtin async,we have to create that environment by using api's and setinterval methods
+* api's are comming with js thats why java is asynce
+*its single threaded language,
+*each opration wait for the last one
+
+##################blocking code and non-blocking code:#####################################
+
+
+blocking code : 1.blocks the flow of entire code 
+                2. reads file syncronuslly
+		e.g (you can ask someone to wait for a moment; I'll go grab some water in the meantime.)
+
+non blocking code : 1.this does not block the entire code
+                    2. reads file asyncronuslly
+                e.g (you can tell someone to go ahead ,I’ll join you shortly)
+
+e.g:  lets take example , i got data from user and i want to store his data in database and afterword i need to give notification to user that your data is register with success
+	but what if i sent him message that your data has register, meanwhile i have'nt worked on his data yet,wouldnt it be wrong, thats it . there are few use cases
+	of in blocking and non blocking code.
+
+********behind the scene***************
+When you run an async task:
+1.The task starts in the call stack.
+2.Then async task is sent to Web APIs (browser features) to handle it in the background.
+3. Once the task is done, it moves to the task queue.
+4.When the call stack is empty, the task moves back to the call stack to finish.
+
+*This process ensures async tasks don’t block other code from running.
+
+##########################   SETTIMEOUT AND SETINTERVAL    ################################################################3
+we get filesystem access in node js engine , cause browser doent have power to read file
+
+settimeout , setinterval  : is method which also calls api
+
+wheneer we declear settimeout and setinterval funciton it comeup with handler(function) and timeout
+
+settimeout    : settimeout takes time then perform operation once 
+setinterval   :  setinterval takes time then perform oprations continuously
+cleartimeout  : Stops a one-time delayed task created by setTimeout
+clearinterval : Stops a repeating task created by setInterval
+
+*****why Value flushout is essential :
+forMaintaining clean and efficient code.
+Preventing bugs and errors.
+Optimizing memory and performance.
+Ensuring security and privacy.
+Enabling reusability and dynamic updates.
+
+##################################PROMISES####################################################################################
+*there are 2 parts of promises (resolve and reject)
+*do an async task
+*database calls,cryptography,network
+*INTERVIEWER MAY ASK PROMISES IN JS :
+
+1.In JavaScript, a Promise is like a placeholder for a value that will be available later,
+2.usually after an asynchronous operation (like fetching data or waiting for a timer). 
+3.It helps you handle tasks that take time without blocking your code
+
+How it works:
+Pending: The Promise starts in this state—waiting for the result.
+
+Fulfilled: The task completes successfully, and the Promise returns a value.
+
+Rejected: The task fails, and the Promise returns an error.
+
+
+################################################3
+there are 4 Key Points:
+resolve: Used when the task succeeds.
+
+reject: Used when the task fails.
+
+.then(): Handles the successful result.
+
+.catch(): Handles errors.
+
+Promises make async code cleaner and easier to manage!
+
+##################################( FETCH METHOD ) #############################################
+definition : fetch is a modern JavaScript function used to make HTTP requests 
+(like getting data from a server or sending data to a server). 
+It’s a simpler and more powerful alternative to older methods like XMLHttpRequest
+
+How fetch Works:
+1.You call fetch(url) to send a request to a server.
+2.It returns a Promise that resolves to the server's response.
+3.You can then process the response (e.g., convert it to JSON).
+
+########################constructor function ##########################
+ constructor function is used to create and initialize objects. 
+It acts as a blueprint for creating multiple objects with similar properties and methods.
+we use new keyword to while creating constructor function 
+
+################################## NEW KEYWORD #############################################
+* 1.wherever we use new keyword,it creates new js object{}, created which we call instance
+* 2.constructor function calls cause of new keyword (packed all the argument and give it to us)
+* 3.by using this kewordd all aruments which we have given will injecte in newly created variable and Automatically returns the new object 
+* 4.  we can stop overwritting values in function by using this
+######################instance of ###############################
+instanceof in Plain Words:
+// It’s like asking: give answer in true or false 
+
+################
+
+WATCH VIDEO 43 : FROM 26MIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

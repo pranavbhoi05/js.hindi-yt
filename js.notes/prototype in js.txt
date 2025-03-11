@@ -1,0 +1,95 @@
+javascript is prototype base language
+
+
+*Why use prototype?
+ans : in simple words prototypes are used to get access to properties and methods defined on the parent object's prototype
+
+
+for understanding: const simple = {
+    pname : "pranav"
+}
+
+const girl = {
+   name: "gauri",
+   __proto__ :simple
+}
+
+const collabe = {
+    name3 : "im three",
+    __proto__: girl
+}
+
+WHAT WILL HAPPEN IN THIS CODE THAT : when we run this in browser then first it will check (e.g collabe will check if that property is present in his object or not( untill it gets null) , 
+				     if not then collabe will start searching the same property in another object by using (__proto__)
+				     (THIS IS WHAT WE CALL PROTOTYPAL INHERITANCE)
+
+*remember :  every single component in js is object cause evary component's last prototype is object
+* diffrence between __proto__ and prototype
+#######################################################################################################################################################
+
+prototype is reason we got working of new keyword,same goes to class and this keyword and prototype inheritance all come form this thing
+
+#inheritance:
+                prototype dont giveup in js, it keep seraching for that thing until it get
+                it keep going into detailing (searching )  and this is what we call inheritance in javascript  
+
+
+
+but where does it stop ?
+
+we also call this prototype inheritance
+
+
+WE CAN ASLO BEHAVE FUNCTION AS OBJECT BY USING . 
+function reference to object if we think technichally	
+
+
+truelenght??
+
+
+* It allows an object to inherit properties and methods from its prototype
+__proto__ is considered legacy. Modern code should use Object.getPrototypeOf() and Object.setPrototypeOf() instead:
+
+We use __proto__ in JavaScript to access or set the prototype of an object.
+ The prototype is like a "parent object" that allows an object to inherit properties and methods. This is the core of JavaScript's prototype-based inheritance.
+
+Inheritance: Objects can share properties and methods from their prototype, saving memory and avoiding duplication.
+
+Dynamic Updates: If you change the prototype, all objects linked to it automatically get the updated properties/methods.
+
+############################################
+
+In modern JavaScript, instead of using __proto__, you should use Object.getPrototypeOf() to get the prototype of an object and Object.setPrototypeOf() to set the prototype of an object. These methods are standardized and safer.
+
+
+#####################
+
+code:
+
+// Create a prototype object
+let animal = {
+  eats: true
+};
+
+// Create an object
+let rabbit = {
+  jumps: true
+};
+
+// Set the prototype of `rabbit` to `animal`
+Object.setPrototypeOf(rabbit, animal);
+
+// Access the prototype of `rabbit`
+console.log(Object.getPrototypeOf(rabbit) === animal); // true
+
+// Access inherited property
+console.log(rabbit.eats); // true (inherited from `animal`)
+
+##################################
+
+Key Points:
+Object.setPrototypeOf(obj, prototype): Sets the prototype of obj to prototype.
+
+Object.getPrototypeOf(obj): Returns the prototype of obj.
+
+This is the modern and recommended way to work with prototypes in JavaScript. Avoid using __proto__ in new code

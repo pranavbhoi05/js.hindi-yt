@@ -1,0 +1,6 @@
+Use object literals for one-off objects.
+Use constructor functions or classes when you need multiple objects with the same structure.
+Use factory functions if you want more flexibility or don’t like using new.
+
+constructor function :
+			*always provides new instance

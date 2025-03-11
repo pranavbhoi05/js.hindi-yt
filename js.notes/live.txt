@@ -1,0 +1,33 @@
+shallow copy and deep copy
+
+polyphil
+
+************************
+macine coding:
+
+geters and seters
+
+debouncing and throttling
+
+undefined timezone?
+
+tolocaltimestring
+
+
+
+tolocaldatestring
+tolocalstring
+
+call and bind e.g for interval
+******************************
+videos on proxy watch on piush channel
+
+sync: runs instantly
+async: takes times to give output
+to track asnc task we use promise
+
+##################################################################
+10-3-2025
+
+interview : enable negative indexing js
+whats currying? 

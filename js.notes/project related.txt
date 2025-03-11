@@ -1,0 +1,287 @@
+project no 1
+#################################################################################################3
+
+const form = document.querySelector('form');
+
+// in form values should always be add in eventlister e.g (variables)
+// this usecase will give you empty
+// const height = parseInt(document.querySelector('#height').value);
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = 'please give valid id';
+  }
+  if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = 'please give valid id';
+  } else {
+    const bmi = (weight /((height * height)/ 10000)).toFixed(2);
+    results.innerHTML = bmi;
+
+    if (bmi > 20) {
+      results.innerHTML = `you need to loss weight,current bmi is ${bmi}`;
+    }
+    if (bmi < 20) {
+      results.innerHTML = `you need to gain some extra weight,current bmi is ${bmi}`;
+    }
+    if (bmi >= 20) {
+      results.innerHTML = `you need extrem diet plan to lose weight ,current bmi is ${bmi}`;
+    }
+  }
+});
+
+// parseint : This code converts the string "123" into the integer 123. It's a straightforward example of how parseInt() interprets and converts string data.
+
+
+#########################################################################################################
+
+project no 4:
+const randomnumber = parseInt(Math.random() * 100 + 1);
+
+// const form = document.querySelector('form');
+const userinput = document.querySelector('#guessField');
+const submit = document.querySelector('#subt');
+const guessslot = document.querySelector('.guesses');
+const remaining = document.querySelector('.lastResult');
+const laworhi = document.querySelector('.lowOrHi');
+const startover = document.querySelector('.resultParas');
+
+const p = document.querySelector('p');
+
+let prevguess = [];
+let numberofguesses = 1;
+
+let playgame = true;
+
+if (playgame) {
+  submit.addEventListener('click', function (e) {
+    e.preventDefault();
+    const guess = parseInt(userinput.value); //to add value in index or we can also add on above userinput
+    console.log(guess);
+    validedguess(guess);
+  });
+}
+
+function validedguess(guess) {
+  //to check if value is given is sting or weird value like abc , cause we need int numbers  (alsao check is that value exist or not)
+  if (isNaN(guess)) {
+    alert(`please enter a valid number`);
+  } else if (guess < 1) {
+    alert(`please enter a valid number`);
+  } else if (guess > 100) {
+    alert(`please enter a less than 100`);
+  } else {
+    prevguess.push(guess);
+  }
+  if ((numberofguesses) => 10) {
+    displaymessage(`game over and random number was ${randomnumber}`);
+    endgame();
+  } else {
+    displayguess(guess); //to display 10values in array
+    checkguess(guess);
+  }
+}
+
+function checkguess(guess) {
+  //to print messages if its higg or low or  guess;
+  if (guess === randomnumber) {
+    displaymessage(`guess is right`);
+  }
+  if (guess < randomnumber) {
+    displaymessage(`num is too law`);
+  }
+  if (guess > randomnumber) {
+    displaymessage(`num is too high`);
+  }
+}
+
+function displayguess(guess) {
+  //(for cleaning values)
+  //to clean values cause we also want to add more guesses, also update array[], also update guess remaining
+  userinput.value = '';
+  guessslot.innerHTML += `${guess}  `;
+  numberofguesses++;
+  remaining.innerHTML = `${11 - numberofguesses}`;
+}
+
+function displaymessage(message) {
+  //for loworhi
+  laworhi.innerHTML = `<h2>${message}</h2>`;
+}
+
+function endgame() {
+  //to end game
+}
+
+function newgame() {
+  //to start new game
+}
+
+############################################################################################################################################
+PROJECT NO 6. color changing
+
+// This function generates a random hexadecimal color code.
+// It works as follows:
+// Defines a string letters containing all possible characters for a hexadecimal color code (0123456789ABCDEF).
+// Initializes a color variable with # (the starting character of a hex color code).
+// Uses a for loop to append 6 random characters from the letters string to the color variable.
+
+// Returns the final color code (e.g., #A1B2C3).
+
+// ######################################################
+//                      START
+
+// A variable to store the ID of the interval created by setInterval. This is used to stop the interval later.
+let intervalId;
+
+// A function to generate a random hexadecimal color code
+function randomcolor() {
+  // A string containing all possible characters for a hex color code.
+  const hex = '0123456789ABCDEF';
+
+  // Initializes the color with #.
+  let color = '#';
+
+  // A loop that runs 6 times to generate 6 random characters.
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+
+  // Returns the final color code.make sure to write after loop scope
+  return color;
+}
+
+//3 function changeBackgroundColor()
+// A function to change the background color of the
+function changeBackgroundColor() {
+  document.body.style.backgroundColor = randomcolor();
+}
+
+//I store setinterval function's value in variable
+let store = function () {
+  changeBackgroundColor();
+};
+
+document.querySelector('#start').addEventListener('click', function () {
+  //safety check
+  // i added if condition which wasnt nessesary in this code just because i use null down below for reseting value(cleanup process)
+  if (!intervalId) {
+    intervalId = setInterval(store, 1000);
+  }
+});
+
+document.querySelector('#stop').addEventListener('click', function () {
+  clearInterval(intervalId);
+
+  // Resets the intervalId variable.
+  intervalId = null;
+});
+
+// letters: A string containing all possible hexadecimal characters (0-9 and A-F).
+// color = '#': Starts the color code with #, as that's how hex colors are represented in CSS.
+// for loop: Loops 6 times (because a hex color code has 6 characters after the #).
+
+
+#######################################################################################################################
+PROJECT 5.
+
+
+const insert = document.querySelector('#insert');
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+   <div class = "color" > 
+   <table>
+  <tr>
+    <th>key</th>
+    <th>keycode</th>
+    <th>code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'space' : e.key}</td> 
+    <td>${e.keyCode} </td>
+    <td>${e.code}</td>
+  </tr>
+  
+</table>
+   </div>
+   `;
+});
+
+#########################################################################################3
+PROJECT 1.
+
+
+const button = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+
+// console.log(button);
+
+button.forEach(function (button) {
+  console.log(button);
+  button.addEventListener('click', function (e) {
+    // console.log(e);
+    // console.log(e.target);
+    switch (e.target.id) {
+      case 'grey':
+        body.style.backgroundColor = 'grey';
+        break;
+      case 'white':
+        body.style.backgroundColor = 'white';
+        break;
+      case 'yellow':
+        body.style.backgroundColor = 'yellow';
+        break;
+      case 'blue':
+        body.style.backgroundColor = 'blue';
+        break;
+      default:
+        console.log('fff');
+    }
+  });
+});
+
+#################################################################################################3
+PROJECT 2.
+
+const form = document.querySelector('form');
+
+// in form values should always be add in eventlister e.g (variables)
+// this usecase will give you empty
+// const height = parseInt(document.querySelector('#height').value);
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const height = parseInt(document.querySelector('#height').value);
+  const weight = parseInt(document.querySelector('#weight').value);
+  const results = document.querySelector('#results');
+
+  if (height === '' || height < 0 || isNaN(height)) {
+    results.innerHTML = 'please give valid id';
+  }
+  if (weight === '' || weight < 0 || isNaN(weight)) {
+    results.innerHTML = 'please give valid id';
+  } else {
+    const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    results.innerHTML = bmi;
+
+    if (bmi > 20) {
+      results.innerHTML = `you need to loss weight,current bmi is ${bmi}`;
+    }
+    if (bmi < 20) {
+      results.innerHTML = `you need to gain some extra weight,current bmi is ${bmi}`;
+    }
+    if (bmi >= 20) {
+      results.innerHTML = `you need extrem diet plan to lose weight ,current bmi is ${bmi}`;
+    }
+  }
+});
+
+// parseint : This code converts the string "123" into the integer 123. It's a straightforward example of how parseInt() interprets and converts string data.
+

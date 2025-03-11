@@ -1,0 +1,90 @@
+check in cmd
+
+num init
+npm : node pacakge manager
+init : initilize
+npm init = to initilize node environment
+description :  a node project for authentication
+entry point: starts that js project file
+test command:
+git repo:
+keywords:
+author: pranavbhoir
+license : (ISC)
+
+##########################################
+phase 1:
+create PACAGE.JSON
+create INDEX.JSON
+now required codein (index.js)
+to bring that data from 3rd party there are 2 ways: 1.requires syntax (also called module)
+						    2.import syntax (mostly used)
+
+*we useing now module syntax
+project init(started)
+
+#########################################################################
+phase 2:
+to know anything about project go to (.env) file or (.env.sample)
+env contains entire database , password and all 
+we using (express js) now : it make thing littel faster
+to install express : npm install express //will gwt code , we dont open node module folder
+go to package.json you can see express version
+now go to express site and copy code and pase in index.js
+
+now make changes in require("express")
+*import express from "express"  (we can easyly change whenever we see requiee express)
+*now remove const express = require('express')
+
+
+s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############
+getters and setters
+encloser
+1.10  1.20
+############################
+docker
+aws
+express js
+sql no sql
+mongo db
+node js
+react
+######################
+create folder for project
+npm init = initilize
+sementic versioning 2.0
+sedcre
+entry point :
+test command:
+git respo:
+main:
+type:
+script:
+cores error
+##############################
+env file
+
+
+################3
+error: this doesnt work on arrow fun
+
+

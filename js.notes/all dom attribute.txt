@@ -1,0 +1,107 @@
+VID NO 32
+*getElementById
+*getElementByClass
+*getAttribute
+*setAttribute
+*style
+*querySelector : we specially use this attribute to select item e.g(li)
+*innertext : to see visual content on in line (h1 to h6)
+*textcontent : to see hidden elements in line  (h1 to h6)
+*innerhtml : gives values with html elemets
+
+*also apply class on entire li
+*******HTML COLLECTION
+*******NODE LIST
+
+###############################################################################3
+i face troublesome in dom ,
+	1.when i wanted to make changes in ul list, there were same class name to all li (nodelist)
+ 	 and i was making changing in its class insted i needed to make changes in ul
+	HOW I SOLVED	: I SELECT UL THEN USE : ul.children[give any node number]
+		note : emmit shortcut will not work sometime, so finish code and exicute
+
+########################################################################
+
+
+
+
+VID NO 33 
+
+*parent child relation------
+*child parent relation--------
+*parent parent relation------
+*child child relation  -----
+*for loop on htmlcollection
+*parent.children[1]
+*parent.firstElementChild     log
+*lastElementChild
+*parentElement
+*nextElementSibling
+*console.log("nodes:",parent.childNodes); : to get nodelist of parent
+
+**************** new file ********************
+*creation on nodelist programatically (creating div element)
+*use createElement
+*in div create class and id
+*setAttribute(title)
+*style,padding
+*create textnode (saves one roundtrip in setattribute)
+*appendChild
+* document.body.appendChild(div)
+
+
+exersice:
+ select the parent element and find out which values you get
+
+
+
+video 34 (edit and remove)
+
+*ul
+**optimize way:
+** to create new element: 
+*add element in list using function in script tag
+*first create element using createElement() and store in variable
+*after creating new element,  in here first we use create text node to 
+add new text and then append in child (li)(parameter)
+*  attach it to parent class using append 
+*then call function
+
+
+*************************************************************************************
+*************************************************************************************
+ edit :method 1
+*first select values
+
+* use : li:nth-child(2) : check the code and i have given 2 cause,
+i want to make changes in  python , i got list like   java,python,typescript,none
+and i wanted to edit number 2 which is python
+
+*hold in variable
+*can use innerhtml to make changes
+
+to optimize approch
+*first select values
+*("li:nth-child(2)")
+*hold in variable
+*hold in create new element which was (li)
+*then add textcontent and add content which u want to replace with
+*use replacewith()
+*************************************************************************************
+edit : method2
+
+*first select values
+*("li:first-child")
+*hold in variable
+*use .outerhtml = '<li>typescript</li>'
+*
+
+
+*************************************************************************************
+*************************************************************************************
+
+**to delete element
+*first select values
+*("li:last-child")
+*use .remove()
+*

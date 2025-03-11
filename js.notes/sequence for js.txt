@@ -1,0 +1,50 @@
+Summary of Sequence:
+1.OOP Basics (Understand the principles). ##done
+2.Prototype (Learn how inheritance works in JavaScript). ###done
+3.Class (Learn ES6 class syntax).   ??
+4.Inheritance (Use extends and super). ##done
+5.Static Methods and Properties (Understand class-level methods).
+6.Call, Apply, and Bind (Learn to control this)
+
+##########################################
+1. OOP (Object-Oriented Programming) Basics
+Start by understanding the core principles of OOP:
+
+Objects: Key-value pairs that represent real-world entities.
+Encapsulation: Bundling data and methods that operate on that data.
+Abstraction: Hiding complex details and exposing only necessary features.
+Inheritance: Creating new classes (child classes) from existing ones (parent classes).
+Polymorphism: Ability to use a single interface for different data types.
+********************************************************************************************
+2. Prototype
+Learn:
+
+What a prototype is (an object that other objects inherit properties and methods from).
+The prototype chain (how objects inherit from other objects).
+How to add methods and properties to an object's prototype.
+**********************************************************************************************
+3. Class
+Learn how ES6 introduced the class keyword to make OOP in JavaScript more intuitive.
+
+Understand:
+How to define a class.
+The constructor method for initializing objects.
+Adding methods to a class.
+*************************************************************************************************
+4.Inheritance : 
+Learn how to create child classes that inherit from parent classes using the extends keyword.
+
+Understand:
+The super keyword to call the parent class's constructor and methods.
+Method overriding in child classes.
+**************************************************************************************************
+5.Static Methods and Properties :
+Learn about static methods and properties, which belong to the class itself rather than instances of the class.
+
+******************************************************************************************************
+6. Call, Apply, and Bind
+Learn how to explicitly set the this value in functions using:
+
+call: Calls a function with a specific this value and arguments passed individually.
+apply: Similar to call, but arguments are passed as an array.
+bind: Creates a new function with a specific this value, which can be called later.
